@@ -1,0 +1,127 @@
+.why {
+  padding: 120px 80px;
+  background: var(--surface);
+  position: relative;
+}
+
+.why__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.why__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.why__item {
+  padding: 32px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.why__item:first-child { padding-top: 0; }
+.why__item:last-child  { border-bottom: none; }
+
+.why__icon {
+  color: var(--gold);
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.why__title {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.why__desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+/* ── CODE WINDOW ── */
+.why__visual {
+  height: 500px;
+}
+
+.code-window {
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.code-window__header {
+  background: var(--surface-2);
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot--r { background: #FF6058; }
+.dot--y { background: #FFBD2E; }
+.dot--g { background: #28C840; }
+
+.code-window__filename {
+  margin-left: auto;
+  font-size: 10px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+}
+
+.code-window__body {
+  padding: 24px;
+  font-size: 11px;
+  line-height: 1.9;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.code-line {
+  display: flex;
+  gap: 16px;
+}
+
+.ln  { color: var(--text-muted); user-select: none; min-width: 20px; text-align: right; }
+.kw  { color: #C792EA; }
+.fn  { color: #82AAFF; }
+.st  { color: #C3E88D; }
+.cm  { color: var(--text-muted); font-style: italic; }
+.nu  { color: var(--gold); }
+.op  { color: #89DDFF; }
+
+@media (max-width: 900px) {
+  .why {
+    padding: 80px 24px;
+  }
+
+  .why__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why__visual {
+    display: none;
+  }
+}
