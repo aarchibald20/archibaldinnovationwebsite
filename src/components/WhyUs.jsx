@@ -43,7 +43,7 @@ const codeLines = [
   { ln: 20, parts: [{ cls: '', text: '});' }] },
   { ln: 21, parts: [] },
   { ln: 22, parts: [{ cls: 'cm', text: '// Launch 🚀' }] },
-  { ln: 23, parts: [{ cls: 'fn', text: 'console' }, { cls: '', text: '.' }, { cls: 'fn', text: 'log' }, { cls: '', text: '(' }, { cls: 'st', text: '`${client.name} is live!`' }, { cls: '', text: ');' }] },
+  { ln: 23, parts: [{ cls: 'fn', text: 'console' }, { cls: '', text: '.' }, { cls: 'fn', text: 'log' }, { cls: '', text: '(' }, { cls: 'st', text: '"Your Business is live!"' }, { cls: '', text: ');' }] },
   { ln: 24, parts: [{ cls: 'cm', text: '// → Your Business is live!' }] },
   { ln: 25, parts: [] },
   { ln: 26, parts: [{ cls: 'kw', text: 'export default' }, { cls: '', text: ' { roi: ' }, { cls: 'nu', text: 'Infinity' }, { cls: '', text: ' };' }] },
